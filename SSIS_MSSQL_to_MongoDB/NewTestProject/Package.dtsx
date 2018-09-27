@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="33"
-  DTS:VersionGUID="{5EE9042E-CC37-49A2-8200-89E6818F0A26}">
+  DTS:VersionBuild="34"
+  DTS:VersionGUID="{7C4D5FAD-E012-4D4C-A4C1-B89126575528}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -47,7 +47,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAyku0Cg4qVkyBad10rR2/QAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABSzu6wfHyFYf81IsITLb7TAAAAAASAAACgAAAAEAAAANY91JgCmC3VNqpG8Ir6+logAAAAXmbboNQTtLjtriJu3TmsKefKkFua1Q+1VXeIFpIBd/AUAAAA6BUS0O7x8IBluz4gLPnbx3/qvN0</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAyku0Cg4qVkyBad10rR2/QAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAfbFv53p4Wj/CQ0aVwQyC6AAAAAASAAACgAAAAEAAAAN52Jb3HWJbJC4RDwc+fjK8gAAAAMOuRC5rTUyRAppLRUOdYTU9hLEwgMMCzDzYwyMOcE30UAAAASFL4VBoZaMc5SnIpdgFD7JNtNSk</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -62,7 +62,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAyku0Cg4qVkyBad10rR2/QAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA+M4PRo9tZ2K8bg/0I4SIRAAAAAASAAACgAAAAEAAAAKVZ3b2x+3wR3Kn/HvTbfbQgAAAAd1JJl5FpA0EfnGdoe2IDISvTng7tSOH/wmCpbLg8HaAUAAAA5NAQa7K9EHZMriKwFE/08JSbPcU</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAyku0Cg4qVkyBad10rR2/QAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACZypj27BNtDx0U4/09ru66AAAAAASAAACgAAAAEAAAAJCZDbn+N0f4wBAnvbz7wnggAAAA8ygfLuvkgn0d6BonrsuL6TkYhI6u+iPjxJ/k+dPFp1oUAAAAeJtC4luVkNG7bsTstFzXXgafFLY</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -81,7 +81,7 @@
           ProgressUpdateInterval="4096">
           <Password
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAyku0Cg4qVkyBad10rR2/QAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACLG9JfrXZTXoq2k6YxVRFDAAAAAASAAACgAAAAEAAAAKhME8cWkYcH4NwvbvTF5AIYAAAACagaMaIP8EZ0HBNDrEuDqOc6YGo+2xYsFAAAADAPgS4QT07KDPAi/eIpTsxxmir3</Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAyku0Cg4qVkyBad10rR2/QAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC8Yl0DynNPkNcaWsCKBIEVAAAAAASAAACgAAAAEAAAALMfZSmH/7SU6um7sA4E6dYYAAAAH71tD2uuERdHHsXkOtksXXcxuf/yRpWaFAAAACSM6AtTg/u6PiAcGFL6zksaYvBV</Password>
         </ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3316,7 +3316,7 @@ ORDER BY pid</property>
         <NodeLayout
           Size="125.333333333334,42.6666666666667"
           Id="Package\Migration"
-          TopLeft="5.49999999999999,4.13157892161129" />
+          TopLeft="5.49999999999999,3.21929820268548" />
       </GraphLayout>
     </LayoutInfo>
   </Package>

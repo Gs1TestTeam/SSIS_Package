@@ -1,0 +1,1006 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/20/2018 1:09:25 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LDM-OLGAA"
+  DTS:CreatorName="ECCC\olgaa"
+  DTS:DTSID="{26C45C86-125B-4FAC-B228-1632316F4D5B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3002.113"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{D27E0DCC-ED9B-4C58-80AA-B6A672DC6A6B}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.testdb.root]"
+      DTS:CreationName="ADO.NET:MySql.Data.MySqlClient.MySqlConnection, MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"
+      DTS:DTSID="{05769307-340A-482E-A852-9AA48709FE8F}"
+      DTS:ObjectName="localhost.testdb.root">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="server=localhost;user id=root;database=testdb;port=3306;">
+          <DTS:Password
+            DTS:Name="password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjLarfsuaAUaDlI7A9sIzwQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAcFJ9t4c5QIhmC0Yx3/catAAAAAASAAACgAAAAEAAAAL105afYMpL2LFkopqlAvFwgAAAAoHLyAaMckYwu+deHQkdqt6QIsUGTRM00Lzo2Zf6y9AYUAAAARpqtuUSC7xXizhKDXtmRo4LO6BU</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.testdb.root 1]"
+      DTS:CreationName="ADO.NET:MySql.Data.MySqlClient.MySqlConnection, MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"
+      DTS:DTSID="{A734BCF5-0763-4E50-8A28-B1034A50ACD7}"
+      DTS:ObjectName="localhost.testdb.root 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="server=localhost;user id=root;database=testdb;port=3306;">
+          <DTS:Password
+            DTS:Name="password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjLarfsuaAUaDlI7A9sIzwQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABj55TdmxcfVCATUjMhgoZeAAAAAASAAACgAAAAEAAAADg9xnoB+JIM8FK73kElxzkgAAAAL8hmJXVDDU2U9rIr0r8GaYVrFsZ08IdiWU4SushfNfIUAAAA1aPvYwnCvdZysyXvj34u4XGwxoo</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.testdb.root 2]"
+      DTS:CreationName="ADO.NET:MySql.Data.MySqlClient.MySqlConnection, MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"
+      DTS:DTSID="{A16F61EA-7052-4704-BB16-D1BACCDAB78C}"
+      DTS:ObjectName="localhost.testdb.root 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="server=localhost;user id=root;database=testdb;port=3306;">
+          <DTS:Password
+            DTS:Name="password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjLarfsuaAUaDlI7A9sIzwQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAL9iohF7Gdta7pPa8zI0LlAAAAAASAAACgAAAAEAAAAAaA8AviexK3seAkuunKkD8gAAAAqFPZXi43y/nAZPNztZUqC5bmfUcHyRE58GTKcNeV6fcUAAAAuK4I5AokgoE92DOcDIG8Cx4oOaw</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MongoDB 1]"
+      DTS:CreationName="ZS-MONGODB"
+      DTS:DTSID="{5FE993E0-0A26-4D0A-83D3-995DC615E0D3}"
+      DTS:ObjectName="MongoDB 1">
+      <DTS:ObjectData>
+        <ConnectionManager
+          ConnectionString="Host=ds137812.mlab.com:37812;Database=clouddatabase;UserName=aname123;Timeout=60;Options=connectTimeoutMS=60000;UseClientCertificate=False;CertificatePath=;CheckCertificateRevocation=True;AllowInvalidCertificate=False;CursorOptions=;ReadConcern="
+          Timeout="60"
+          RetryInterval="10"
+          MaxRetryOnError="3"
+          MaxParallelThreads="8"
+          ProgressUpdateInterval="4096">
+          <Password
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjLarfsuaAUaDlI7A9sIzwQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADcaVXAMv8P1f9PjfhI+XZOAAAAAASAAACgAAAAEAAAAM9ni5eOq6gJtWj72ZC94gwYAAAAtRbEjrj3yjLhKKBweCD61D+LrH656SRyFAAAALxj5fwiSki1FnWV/Jeb3JSl85gZ</Password>
+        </ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\MySQL-MongoDB Migration"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{361D2D87-EC12-489E-AE20-4D42467770B5}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="MySQL-MongoDB Migration"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\MySQL-MongoDB Migration\ADO NET Source Child"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="ADO NET Source Child"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from testdb.secondary2 order by resident</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.testdb.root 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.testdb.root 2]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output]"
+                  isSorted="true"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].Columns[ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].ExternalColumns[ID]"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].Columns[ID]"
+                      name="ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].Columns[resident]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].ExternalColumns[resident]"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].Columns[resident]"
+                      name="resident"
+                      sortKeyPosition="1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].Columns[hobby]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].ExternalColumns[hobby]"
+                      length="45"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].Columns[hobby]"
+                      name="hobby"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].Columns[location]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].ExternalColumns[location]"
+                      length="45"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].Columns[location]"
+                      name="location"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].ExternalColumns[resident]"
+                      dataType="i4"
+                      name="resident" />
+                    <externalMetadataColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].ExternalColumns[hobby]"
+                      dataType="wstr"
+                      length="45"
+                      name="hobby" />
+                    <externalMetadataColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].ExternalColumns[location]"
+                      dataType="wstr"
+                      length="45"
+                      name="location" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Error Output].Columns[ID]"
+                      dataType="i4"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Error Output].Columns[ID]"
+                      name="ID" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Error Output].Columns[resident]"
+                      dataType="i4"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Error Output].Columns[resident]"
+                      name="resident" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Error Output].Columns[hobby]"
+                      dataType="wstr"
+                      length="45"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Error Output].Columns[hobby]"
+                      name="hobby" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Error Output].Columns[location]"
+                      dataType="wstr"
+                      length="45"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Error Output].Columns[location]"
+                      name="location" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="ADO NET Source Parent"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from testdb.randomtable order by ID</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.testdb.root 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.testdb.root 1]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output]"
+                  isSorted="true"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].ExternalColumns[ID]"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[ID]"
+                      name="ID"
+                      sortKeyPosition="1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[RESIDENT_NAME]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].ExternalColumns[RESIDENT_NAME]"
+                      length="225"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[RESIDENT_NAME]"
+                      name="RESIDENT_NAME"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[HOUSE_COLOUR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].ExternalColumns[HOUSE_COLOUR]"
+                      length="225"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[HOUSE_COLOUR]"
+                      name="HOUSE_COLOUR"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[PETS]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].ExternalColumns[PETS]"
+                      length="225"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[PETS]"
+                      name="PETS"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[RENT]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].ExternalColumns[RENT]"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[RENT]"
+                      name="RENT"
+                      precision="7"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[COMPANY_NAME]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].ExternalColumns[COMPANY_NAME]"
+                      length="225"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[COMPANY_NAME]"
+                      name="COMPANY_NAME"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].ExternalColumns[RESIDENT_NAME]"
+                      dataType="wstr"
+                      length="225"
+                      name="RESIDENT_NAME" />
+                    <externalMetadataColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].ExternalColumns[HOUSE_COLOUR]"
+                      dataType="wstr"
+                      length="225"
+                      name="HOUSE_COLOUR" />
+                    <externalMetadataColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].ExternalColumns[PETS]"
+                      dataType="wstr"
+                      length="225"
+                      name="PETS" />
+                    <externalMetadataColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].ExternalColumns[RENT]"
+                      dataType="numeric"
+                      name="RENT"
+                      precision="7"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].ExternalColumns[COMPANY_NAME]"
+                      dataType="wstr"
+                      length="225"
+                      name="COMPANY_NAME" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output].Columns[ID]"
+                      dataType="i4"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output].Columns[ID]"
+                      name="ID" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output].Columns[RESIDENT_NAME]"
+                      dataType="wstr"
+                      length="225"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output].Columns[RESIDENT_NAME]"
+                      name="RESIDENT_NAME" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output].Columns[HOUSE_COLOUR]"
+                      dataType="wstr"
+                      length="225"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output].Columns[HOUSE_COLOUR]"
+                      name="HOUSE_COLOUR" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output].Columns[PETS]"
+                      dataType="wstr"
+                      length="225"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output].Columns[PETS]"
+                      name="PETS" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output].Columns[RENT]"
+                      dataType="numeric"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output].Columns[RENT]"
+                      name="RENT"
+                      precision="7"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output].Columns[COMPANY_NAME]"
+                      dataType="wstr"
+                      length="225"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output].Columns[COMPANY_NAME]"
+                      name="COMPANY_NAME" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\MySQL-MongoDB Migration\JSON Generator Transform"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="JSON Generator Transform; ZappySys LLC (c) All Rights Reserved; SSIS PowerPack; http://www.zappysys.com/support"
+              description="The JSON generator transform can be used to create JSON document from single or multiple inputs. You can create simple or nested JSON document."
+              name="JSON Generator Transform"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="LoggingMode determines how much information is logged during Package Execution. Set Logging mode to Debugging for maximum log."
+                  expressionType="Notify"
+                  name="LoggingMode"
+                  typeConverter="ZappySys.PowerPack.Common.LoggingMode, ZappySys.PowerPack140, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1903265a93eae502">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="When you enable this property it will prefix timestamp before Log messages."
+                  expressionType="Notify"
+                  name="PrefixTimestamp">false</property>
+                <property
+                  dataType="System.Null"
+                  expressionType="Notify"
+                  name="SelfRef"
+                  typeConverter="NOTBROWSABLE" />
+                <property
+                  dataType="System.Int32"
+                  description="Determines JSON format and output mode (e.g. one JSON for all input rows or one JSON for each input row)"
+                  expressionType="Notify"
+                  name="OutputMode"
+                  typeConverter="ZappySys.PowerPack.Transform.JsonGeneratorTransform.JsonOutputMode, ZappySys.PowerPack140, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1903265a93eae502">2</property>
+                <property
+                  dataType="System.String"
+                  description="Defines shape of output JSON string"
+                  expressionType="Notify"
+                  name="LayoutInfo">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;settings ver="3"&gt;
+  &lt;dataset id="Parent" main="True" inputid="270" readfrominput="True"&gt;&lt;/dataset&gt;
+  &lt;dataset id="Child" inputid="293" readfrominput="True"&gt;&lt;/dataset&gt;
+  &lt;join parentid="Parent" childid="Child"&gt;
+    &lt;key parent="ID" child="resident" /&gt;
+  &lt;/join&gt;
+  &lt;map src="ID" name="ID" /&gt;
+  &lt;map src="RESIDENT_NAME" name="RESIDENT_NAME" /&gt;
+  &lt;map src="HOUSE_COLOUR" name="HOUSE_COLOUR" /&gt;
+  &lt;map src="PETS" name="PETS" /&gt;
+  &lt;map src="RENT" name="RENT" /&gt;
+  &lt;map src="COMPANY_NAME" name="COMPANY_NAME" /&gt;
+  &lt;map name="nested_data" dataset="Child" parentdataset="Parent" maptype="DocArray"&gt;
+    &lt;map src="ID" name="ID" /&gt;
+    &lt;map src="resident" name="resident" /&gt;
+    &lt;map src="hobby" name="hobby" /&gt;
+    &lt;map src="location" name="location" /&gt;
+  &lt;/map&gt;
+&lt;/settings&gt;</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Do not output attribute if value is NULL. By default null attribute is output as &quot;MyColname&quot; : null "
+                  expressionType="Notify"
+                  name="DoNotOutputNullAttribute">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indent JSON Text generated by this transform (Pretty Print)"
+                  expressionType="Notify"
+                  name="IndentOutput">false</property>
+                <property
+                  dataType="System.String"
+                  description="Default output format for datetime columns"
+                  expressionType="Notify"
+                  name="DateTimeFormat">yyyy-MM-dd HH:mm:ss</property>
+                <property
+                  dataType="System.String"
+                  description="Culture setting for this task. This option is useful to control output format for certain data types (e.g. number, decimal) based on regional settings. In USA dot is used for decimal indicator but in Germany it may be comma. Leave this blank if you want to use system default settings."
+                  expressionType="Notify"
+                  name="Culture"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Document Header/Footer text come from upstream column rather than direct string"
+                  expressionType="Notify"
+                  name="UseColumnForHeaderFooter">false</property>
+                <property
+                  dataType="System.String"
+                  description="Header text for document (Added before each document in the output)"
+                  expressionType="Notify"
+                  name="DocumentHeader"></property>
+                <property
+                  dataType="System.String"
+                  description="Footer text for document (Added after each document in the output)"
+                  expressionType="Notify"
+                  name="DocumentFooter"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how many rows to include in each batch (Array records for single dataset array mode). 0=Include all in one batch. This setting is only valid for Mode=[Single Dataset Array]"
+                  expressionType="Notify"
+                  name="ArrayBatchSize">0</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">ZappySys.JsonGeneratorTransform</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Inputs[JsonInput1]"
+                  name="JsonInput1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Id for attached dataset with input. Use JSON Layout Editor to see attached dataset"
+                      expressionType="Notify"
+                      name="DatasetInputId">270</property>
+                  </properties>
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Inputs[JsonInput1].Columns[ID]"
+                      cachedDataType="i4"
+                      cachedName="ID"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[ID]" />
+                    <inputColumn
+                      refId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Inputs[JsonInput1].Columns[RESIDENT_NAME]"
+                      cachedDataType="wstr"
+                      cachedLength="225"
+                      cachedName="RESIDENT_NAME"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[RESIDENT_NAME]" />
+                    <inputColumn
+                      refId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Inputs[JsonInput1].Columns[HOUSE_COLOUR]"
+                      cachedDataType="wstr"
+                      cachedLength="225"
+                      cachedName="HOUSE_COLOUR"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[HOUSE_COLOUR]" />
+                    <inputColumn
+                      refId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Inputs[JsonInput1].Columns[PETS]"
+                      cachedDataType="wstr"
+                      cachedLength="225"
+                      cachedName="PETS"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[PETS]" />
+                    <inputColumn
+                      refId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Inputs[JsonInput1].Columns[RENT]"
+                      cachedDataType="numeric"
+                      cachedName="RENT"
+                      cachedPrecision="7"
+                      cachedScale="2"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[RENT]" />
+                    <inputColumn
+                      refId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Inputs[JsonInput1].Columns[COMPANY_NAME]"
+                      cachedDataType="wstr"
+                      cachedLength="225"
+                      cachedName="COMPANY_NAME"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output].Columns[COMPANY_NAME]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Inputs[JsonInput2]"
+                  name="JsonInput2">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Id for attached dataset with input. Use JSON Layout Editor to see attached dataset"
+                      expressionType="Notify"
+                      name="DatasetInputId">293</property>
+                  </properties>
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Inputs[JsonInput2].Columns[ID]"
+                      cachedDataType="i4"
+                      cachedName="ID"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].Columns[ID]" />
+                    <inputColumn
+                      refId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Inputs[JsonInput2].Columns[resident]"
+                      cachedDataType="i4"
+                      cachedName="resident"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].Columns[resident]" />
+                    <inputColumn
+                      refId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Inputs[JsonInput2].Columns[hobby]"
+                      cachedDataType="wstr"
+                      cachedLength="45"
+                      cachedName="hobby"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].Columns[hobby]" />
+                    <inputColumn
+                      refId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Inputs[JsonInput2].Columns[location]"
+                      cachedDataType="wstr"
+                      cachedLength="45"
+                      cachedName="location"
+                      lineageId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output].Columns[location]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Inputs[JsonInput3]"
+                  name="JsonInput3">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Outputs[JsonGeneratorTransformOutput]"
+                  errorOrTruncationOperation="Error"
+                  name="JsonGeneratorTransformOutput">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Outputs[JsonGeneratorTransformOutput].Columns[ZS_JSON_OUT]"
+                      dataType="nText"
+                      description="This output column contains generated JSON string from JSON generator Transform"
+                      lineageId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Outputs[JsonGeneratorTransformOutput].Columns[ZS_JSON_OUT]"
+                      name="ZS_JSON_OUT" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\MySQL-MongoDB Migration\MongoDB Destination"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="MongoDB Destination; ZappySys LLC (c) All Rights Reserved; SSIS PowerPack; http://www.zappysys.com/support"
+              description="The MongoDB Destination is used to write NoSQL data to MongoDB collection. NoSQL table has no strict schema and each row may contain different number of attributes unlike traditional RDBMS table."
+              name="MongoDB Destination"
+              usesDispositions="true"
+              version="5">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Enable use of custom lookup query for Update / Upsert or Delete Operation. By default JOIN condition for target record match is generated automatically based on columns you supply in ColumnsForLookup property. However in some cases you need to supply custom condition for lookup to perform complex operations, in such case enable this option. When you enable this option you must supply map __DOCUMENT__ input column. String you supply to this column should be in this format &lt;command&gt;&lt;query&gt;YOUR_LOOKUP_QUERY&lt;/query&gt;&lt;document&gt;YOUR_JSON_DOC&lt;/document&gt;&lt;/command&gt;. Lookup query in &lt;query&gt; tag can be either Mongo JSON format (e.g. { &quot;CustomerID&quot; : &quot;AAA&quot;, &quot;Orders.OrderID&quot; : { &quot;$ne&quot; : &quot;1000&quot; } }) or you can use ZappySys SQL query (e.g. select * from mytable where CustomerID='AAA' and [Orders.$.OrderID] != '1000' )"
+                  expressionType="Notify"
+                  name="EnableCustomLookupQuery">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="LoggingMode determines how much information is logged during Package Execution. Set Logging mode to Debugging for maximum log."
+                  expressionType="Notify"
+                  name="LoggingMode"
+                  typeConverter="ZappySys.PowerPack.Common.LoggingMode, ZappySys.PowerPack140, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1903265a93eae502">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="When you enable this property it will prefix timestamp before Log messages."
+                  expressionType="Notify"
+                  name="PrefixTimestamp">false</property>
+                <property
+                  dataType="System.Null"
+                  expressionType="Notify"
+                  name="SelfRef"
+                  typeConverter="NOTBROWSABLE" />
+                <property
+                  dataType="System.Boolean"
+                  description="When this option is true then each batch is processed in bulk mode in first attempt and when it fails that particular batch is processed in row by row mode to detect bad record. By default when error occurs all records from that batch is rejected but when this option is true you can process all good records and only reject records causing error."
+                  expressionType="Notify"
+                  name="SwitchToRowByRowOnBatchFail">false</property>
+                <property
+                  dataType="System.String"
+                  description="Table name from where you want to read data"
+                  expressionType="Notify"
+                  name="TableName"
+                  typeConverter="ZappySys.PowerPack.Converters.TableEditor,ZappySys.PowerPack140.UI,Version=1.0.0.0,Culture=neutral,PublicKeyToken=1903265a93eae502">mySQLtest</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates how many records are process in a single request. Setting this value to 0 will extract all records in single request."
+                  expressionType="Notify"
+                  name="BatchSize">500</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates Access Mode of data (e.g. Table or Sql Query)"
+                  expressionType="Notify"
+                  name="AccessMode"
+                  typeConverter="ZappySys.PowerPack.Common.DataAccessMode, ZappySys.PowerPack140, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1903265a93eae502">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies SQL query to access data. This setting is ignored when access mode is set to Table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies operation for destination data load (e.g. Insert, Reload etc). Default operation is Insert (data always appended to target)."
+                  expressionType="Notify"
+                  name="Operation"
+                  typeConverter="ZappySys.PowerPack.Common.DestinationOperation, ZappySys.PowerPack140, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1903265a93eae502">0</property>
+                <property
+                  dataType="System.String"
+                  description="Update/Upsert/Delete you will need JOIN columns. If you have not specified JOIN column in Mapping Editor then supply here. Specify comma separated list of target column names which can be used to lookup documents on target for selected Operation. Column names are case-sensitive. Make sure JOIN column name is correctly spelled. JOIN column can be part of supplied input DOCUMENT or it can be mapped separately as input column on Mapping Editor. When JOIN column is found inside nested sub document (i.e. not in first level) then you have to use hierarchy separator (&gt;) and server side path for same column (Use dot). Example: if you joining by two columns OrderID and ZipCode where ZipCode is found in nested sub document then use JOIN criteria like this (e.g. OrderID,LocationInfo &gt; ZipInfo &gt; ZipCode AS LocationInfo.ZipInfo.ZipCode). If your JOIN condition contains column from Array then your condition may looks like this Orders.$.OrderID AS Orders.OrderID (assuming You have named your property in input document as Orders.$.OrderID). For more information about how to using $ inside Update document see this https://docs.mongodb.com/manual/reference/operator/update/positional/#op._S_"
+                  expressionType="Notify"
+                  name="ColumnsForLookup"></property>
+                <property
+                  dataType="System.String"
+                  description="Load options can be used to provide additional instruction for Update/Upsert/Delete operations.&#xA;Syntax: &lt;option1&gt;=&lt;value1&gt;;&lt;option2&gt;=&lt;value2&gt;.....&lt;optionN&gt;=&lt;valueN&gt;&#xA;Following options are supported right now for MongoDB update/upsert/delete operations &#xA;• op : [Default Value = $set] Use this option to specify additional update operator (e.g. none, $set, $push, $pull, $inc, $mul, $rename etc.). If you set op=none then you have to supply update operator along with your input document mapped to input column __DOCUMENT__ e.g. {$set : {..your document..} } . For more info visit https://docs.mongodb.org/manual/reference/operator/update/&#xA;• multi : [Default Value = true] Set this to true if you want to affect more than one records for matching input lookup keys. If you just want to update one record if multiple records returned then set this to false. &#xA;&#xA;For Update/Upsert/Delete you will need JOIN columns (set as different property) Make sure JOIN column name is correctly spelled, its found inside supplied DOCUMENT or mapped separately as input column. Also make sure its named correctly (its case-sensitive). If you are using column alias then check syntax (JOIN with alias must be like this yourColumnNameFromInputDoc AS yourColumnNameFromServerDoc). If you are joining sub document column which is nested then specify JOIN condition like this LocationInfo &gt; ZipInfo &gt; ZipCode AS LocationInfo.ZipInfo.ZipCode&#xA;"
+                  expressionType="Notify"
+                  name="LoadOptions">op=$set;multi=true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Metadata scan mode controls how data type and length is determined. By default few records scanned to determine datatype/length. Changing ScanMode affects length/datatype accuracy."
+                  expressionType="Notify"
+                  name="MetaDataScanMode"
+                  typeConverter="ZappySys.Common.Data.MetaDataScanMode, ZappySys.Common, Version=1.0.2018.10909, Culture=neutral, PublicKeyToken=1903265a93eae502">4</property>
+                <property
+                  dataType="System.Int32"
+                  description="Length for all string column. This option is only valid for MetaDataScanMode=Custom"
+                  expressionType="Notify"
+                  name="MetaDataCustomLength">1000</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">ZappySys.MongoDBDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\MySQL-MongoDB Migration\MongoDB Destination.Connections[ZS-MONGODB]"
+                  connectionManagerID="Package.ConnectionManagers[MongoDB 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[MongoDB 1]"
+                  description="Runtime connection for this component"
+                  name="ZS-MONGODB" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\MySQL-MongoDB Migration\MongoDB Destination.Inputs[MongoDBDestinationInput]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="MongoDBDestinationInput"
+                  truncationRowDisposition="FailComponent">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\MySQL-MongoDB Migration\MongoDB Destination.Inputs[MongoDBDestinationInput].Columns[ZS_JSON_OUT]"
+                      cachedDataType="nText"
+                      cachedName="ZS_JSON_OUT"
+                      externalMetadataColumnId="Package\MySQL-MongoDB Migration\MongoDB Destination.Inputs[MongoDBDestinationInput].ExternalColumns[__DOCUMENT__]"
+                      lineageId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Outputs[JsonGeneratorTransformOutput].Columns[ZS_JSON_OUT]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\MySQL-MongoDB Migration\MongoDB Destination.Inputs[MongoDBDestinationInput].ExternalColumns[__DOCUMENT__]"
+                      dataType="nText"
+                      description="This column is used to map input JSON Document. When this column is mapped input must contain JSON Document you want to load in target MongoDB collection. All other mappings are ignored when this column is mapped."
+                      name="__DOCUMENT__" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\MySQL-MongoDB Migration\MongoDB Destination.Outputs[MongoDBDestination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="MongoDBDestination Error Output"
+                  synchronousInputId="Package\MySQL-MongoDB Migration\MongoDB Destination.Inputs[MongoDBDestinationInput]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\MongoDB Destination.Outputs[MongoDBDestination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\MySQL-MongoDB Migration\MongoDB Destination.Outputs[MongoDBDestination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\MongoDB Destination.Outputs[MongoDBDestination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\MySQL-MongoDB Migration\MongoDB Destination.Outputs[MongoDBDestination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\MongoDB Destination.Outputs[MongoDBDestination Error Output].Columns[ErrorColumnName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      lineageId="Package\MySQL-MongoDB Migration\MongoDB Destination.Outputs[MongoDBDestination Error Output].Columns[ErrorColumnName]"
+                      name="ErrorColumnName" />
+                    <outputColumn
+                      refId="Package\MySQL-MongoDB Migration\MongoDB Destination.Outputs[MongoDBDestination Error Output].Columns[ErrorMessage]"
+                      dataType="wstr"
+                      length="1024"
+                      lineageId="Package\MySQL-MongoDB Migration\MongoDB Destination.Outputs[MongoDBDestination Error Output].Columns[ErrorMessage]"
+                      name="ErrorMessage" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\MySQL-MongoDB Migration.Paths[ADO NET Source Output]"
+              endId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Inputs[JsonInput1]"
+              name="ADO NET Source Output"
+              startId="Package\MySQL-MongoDB Migration\ADO NET Source Parent.Outputs[ADO NET Source Output]" />
+            <path
+              refId="Package\MySQL-MongoDB Migration.Paths[ADO NET Source Output1]"
+              endId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Inputs[JsonInput2]"
+              name="ADO NET Source Output"
+              startId="Package\MySQL-MongoDB Migration\ADO NET Source Child.Outputs[ADO NET Source Output]" />
+            <path
+              refId="Package\MySQL-MongoDB Migration.Paths[JsonGeneratorTransformOutput]"
+              endId="Package\MySQL-MongoDB Migration\MongoDB Destination.Inputs[MongoDBDestinationInput]"
+              name="JsonGeneratorTransformOutput"
+              startId="Package\MySQL-MongoDB Migration\JSON Generator Transform.Outputs[JsonGeneratorTransformOutput]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="209,42"
+          Id="Package\MySQL-MongoDB Migration"
+          TopLeft="126.727272727273,46.8181818181818" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\MySQL-MongoDB Migration">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="194,42"
+          Id="Package\MySQL-MongoDB Migration\ADO NET Source Parent"
+          TopLeft="17.0454545454545,10.5" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\MySQL-MongoDB Migration\MongoDB Destination"
+          TopLeft="148.636363636364,260.818181818182" />
+        <NodeLayout
+          Size="187,42"
+          Id="Package\MySQL-MongoDB Migration\ADO NET Source Child"
+          TopLeft="299,12.8181818181818" />
+        <NodeLayout
+          Size="208,42"
+          Id="Package\MySQL-MongoDB Migration\JSON Generator Transform"
+          TopLeft="130,125.454545454545" />
+        <EdgeLayout
+          Id="Package\MySQL-MongoDB Migration.Paths[ADO NET Source Output]"
+          TopLeft="114.045454545455,52.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="86.6212121212122,72.9545454545454"
+              Start="0,0"
+              End="86.6212121212122,65.4545454545454">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.4385843164469" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.4385843164469"
+                    Point2="0,43.4385843164469"
+                    Point3="4,43.4385843164469" />
+                  <mssgle:LineSegment
+                    End="82.6212121212122,43.4385843164469" />
+                  <mssgle:CubicBezierSegment
+                    Point1="82.6212121212122,43.4385843164469"
+                    Point2="86.6212121212122,43.4385843164469"
+                    Point3="86.6212121212122,47.4385843164469" />
+                  <mssgle:LineSegment
+                    End="86.6212121212122,65.4545454545454" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\MySQL-MongoDB Migration.Paths[ADO NET Source Output1]"
+          TopLeft="392.5,54.8181818181818">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-125.166666666667,70.6363636363636"
+              Start="0,0"
+              End="-125.166666666667,63.1363636363636">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.058292852186" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38.058292852186"
+                    Point2="0,42.058292852186"
+                    Point3="-4,42.058292852186" />
+                  <mssgle:LineSegment
+                    End="-121.166666666667,42.058292852186" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-121.166666666667,42.058292852186"
+                    Point2="-125.166666666667,42.058292852186"
+                    Point3="-125.166666666667,46.058292852186" />
+                  <mssgle:LineSegment
+                    End="-125.166666666667,63.1363636363636" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\MySQL-MongoDB Migration.Paths[JsonGeneratorTransformOutput]"
+          TopLeft="236.818181818182,167.454545454545">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,93.3636363636366"
+              Start="0,0"
+              End="0,85.8636363636366">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,85.8636363636366" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\MySQL-MongoDB Migration\ADO NET Source Parent">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\MySQL-MongoDB Migration\ADO NET Source Child">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

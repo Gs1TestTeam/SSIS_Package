@@ -4,6 +4,6 @@
     "\\SSIS_MSSQL_to_MongoDB",
     "\\SSIS_MSSQL_to_MongoDB\\NewTestProject"
   ],
-  "SelectedNode": "\\SSIS_MSSQL_to_MongoDB\\SSIS_MSSQL_to_MONGODB.sln",
+  "SelectedNode": "\\SSIS_MSSQL_to_MongoDB\\NewTestProject\\Package.dtsx",
   "PreviewInSolutionExplorer": false
 }
